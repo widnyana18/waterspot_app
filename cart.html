@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Water Sport Nusa Dua</title>
+        
+        <!-- css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">           
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="mx-5">
+        <div class="container-fluid">
+            <div class="row justify-content-between py-3">
+                <div class="col-2 ml-2">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./asset/icon/logo.png"  class="d-inline-block">
+                        Ski Water
+                    </a> 
+                </div>
+                <div class="col-6 pl-5">  
+                    <ul class="d-flex ml-5">
+                        <li class="nav mx-4 active">
+                            <a class="nav-link" href="activities.html">Activities</a>
+                        </li>
+                        <li class="nav mx-3">
+                            <a class="nav-link" href="package.html">Package</a>
+                        </li>
+                        <li class="nav mx-3">
+                            <a class="nav-link" href="javascript:void(0)">Your Cart</a>
+                        </li>
+                        <li class="nav ml-3">
+                            <a class="nav-link" href="about.html">About As</a>
+                        </li>      
+                    </ul>                           
+                </div>
+            </div>                                                                       
+        </div>          
+
+        <!-- main -->
+        <section class="order-field my-5 pb-5">           
+            <div class="slide cart-product m-5" id="cart">
+                <h3>Your Cart</h3>
+                <p>Select Your Ticket to Edit</p>    
+                <div class="row justify-content-center align-items-center">
+                    <div class="col">
+                        <div class="raised-white">
+                            <div class="ticket-field mt-4 mx-5">
+                                <h5 class="title-ticket pl-3">Snorkeling</h5>
+                                <div class="d-flex align-items-center mt-2 mb-5">
+                                    <div class="ticket-img">
+                                        <img src="./asset/img/snorkeling.jpg">
+                                    </div>
+                                    <div class="count mx-4">
+                                        <p>count</p>
+                                        <input type="number">
+                                    </div>
+                                    <div class="price">
+                                        <p class="val-old">IDR 250K</p>
+                                        <h3><span class="satuan">IDR</span>85K</h3>
+                                    </div>                            
+                                </div>
+        
+                                <h5 class="title-ticket pl-3">Flying Fish</h5>
+                                <div class="d-flex align-items-center mt-2 mb-5">
+                                    <div class="ticket-img">
+                                        <img src="./asset/img/flying-fish.jpg">
+                                    </div>
+                                    <div class="count mx-4">
+                                        <p>count</p>
+                                        <input type="number">
+                                    </div>
+                                    <div class="price">
+                                        <p class="val-old">IDR 250K</p>
+                                        <h3><span class="satuan">IDR</span>85K</h3>
+                                    </div>                            
+                                </div>
+        
+                                <h5 class="title-ticket pl-3">Banan Boat</h5>
+                                <div class="d-flex align-items-center mt-2 mb-5">
+                                    <div class="ticket-img">
+                                        <img src="./asset/img/banana-boat.jpg">
+                                    </div>
+                                    <div class="count mx-4">
+                                        <p>count</p>
+                                        <input type="number">
+                                    </div>
+                                    <div class="price">
+                                        <p class="val-old">IDR 250K</p>
+                                        <h3><span class="satuan">IDR</span>85K</h3>
+                                    </div>                            
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex">
+                            <div class="d-flex flex-column align-items-center btn">
+                                <button class="circle-btn" id="add">
+                                    
+                                </button>
+                                <p>Add</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center btn">
+                                <button class="circle-btn" id="switch">
+                                    
+                                </button>
+                                <p>Switch</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center btn">
+                                <button class="circle-btn" id="delete">
+                                    
+                                </button>
+                                <p>Delete</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column total-box align-items-center">
+                            <div class="total-count">
+                                <h5>Total Count</h5>
+                                <h5>03 <span class="satuan">ticket</span></h5>                            
+                            </div>
+                            <span class="line"></span>
+                            <div class="total-price">
+                                <h5>Total Price</h5>
+                                <h2><span class="satuan">IDR</span>560K</h2>
+                            </div>
+                        </div>
+                        <p>Buy Minimal 2 Ticket</p>
+                        <button class="main-btn" onclick="currentSlide(2)">
+                            <span class="wrap-btn"></span>
+                            <a href="#identity">Get Payment</a>
+                        </button> 
+                    </div>
+                </div>                          
+            </div> 
+            
+            <div class="slide form-identity my-5" id="identity">
+                <h3>Form Identity</h3>
+                <div class="row row-cols-3 justify-content-center mt-5">
+                    <div class="col mr-5 mb-5 data-input">                    
+                        <label for="name">Name</label>
+                        <div class="outline-white">
+                            <input type="text" name="name">                     
+                        </div>
+                    </div>
+                    <div class="col mr-5 mb-5 data-input">                    
+                        <label for="schedule">Schedule</label>
+                        <div class="raised-white mt-4">
+                            <input type="month" name="schedule">                     
+                        </div>
+                    </div>
+                    <div class="col mr-5 mb-5 data-input">                    
+                        <label for="email">Email</label>
+                        <div class="outline-white">
+                            <input type="email" name="email">                     
+                        </div>
+                    </div>
+                    <div class="col mr-5 mb-5 data-input">                    
+                        <label for="country">Country</label>
+                        <div class="outline-white small">
+                            <input type="text" name="country">                     
+                        </div>
+                    </div>
+                    <div class="col mr-5 mb-5 data-input">                    
+                        <label for="address">Address</label>
+                        <div class="outline-white">
+                            <input type="text" name="address">                     
+                        </div>
+                    </div>
+                    <div class="col mr-5 mb-5 data-input">                    
+                        <label for="zip">Zip Code</label>
+                        <div class="outline-white small">
+                            <input type="number" name="zip">                     
+                        </div>
+                    </div>                
+                    <button class="main-btn" onclick="currentSlide(3)">
+                        <span class="wrap-btn"></span>
+                        <a href="#payment">Submit</a>
+                    </button>  
+                </div>
+            </div> 
+    
+            <div class="slide form-payment m-5" id="payment">
+                <h3>Payment</h3>
+                <h5 class="d-flex payment-method justify-content-center my-4">Payment Method</h5>                
+                <div class="d-flex payment-method justify-content-center">
+                    <div class="raised-white mr-5">
+                        <img src="./asset/icon/visa.png">               
+                    </div>
+                    <div class="raised-white mr-5">
+                        <img src="./asset/icon/paypal.png">
+                    </div>
+                    <div class="raised-white mr-5">
+                        <img src="./asset/icon/bitcoin.png">
+                    </div>
+                </div>                        
+    
+                <div class="row row-cols-3 justify-content-center mt-5">
+                    <div class="col mr-5 mb-5 data-input">                    
+                        <label for="card">Card Holder Name</label>
+                        <div class="outline-white">
+                            <input type="text" name="card">
+                        </div> 
+                    </div>
+                    <div class="col mr-5 mb-5 data-input">                    
+                        <label for="card-number">Card Number</label> 
+                        <div class="outline-white">
+                            <input type="number" name="card-number">
+                        </div> 
+                    </div>
+                    <div class="col mr-5 mb-5 data-input">                    
+                        <label for="cvc">CVC</label> 
+                        <div class="outline-white small">
+                            <input type="text" name="cvc">
+                        </div>
+                    </div>
+                    <div class="col mr-5 mb-5 data-input">                    
+                        <label for="date">Expiration Date</label>                         
+                        <div class="d-flex pl-5 ml-4">
+                            <div class="raised-white small">
+                                <input type="date" name="date">
+                            </div>
+                            <div class="outline-white small">
+                                <input type="text" name="year">
+                            </div>                     
+                        </div>
+                    </div>                                               
+                </div>            
+    
+                <div class="d-flex justify-content-center">
+                    <button class="main-btn" onclick="currentSlide(4)">
+                        <span class="wrap-btn"></span>
+                        <a href="#">Check Order</a>
+                    </button>                
+                </div>
+            </div>       
+
+            <div class="row step align-items-center justify-content-between py-5 mb-5">
+                <div class="col-1 ml-4">
+                <a class="back" href="javascript:void(0)" onclick="plusSlides(-1)">&lsaquo;</a> 
+                </div>
+                <div class="col-2 ml-5">
+                    <i></i>
+                    <i></i>
+                    <i></i>                          
+                </div>
+                <div class="col-1">
+                    <p id="info"></p>
+                </div>
+            </div>
+        </section>        
+    
+        <!-- footer -->
+        <section class="footer row justify-content-center mt-5 pt-5">
+            <span class="line"></span>
+            <div class="col-5 mr-5">           
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-10 comment-field">
+                        <h5 class="">Feedback</h5>
+                        <div class="outline-white">
+                            <textarea name="comment" id="comment" class="p-2"></textarea>
+                        </div> 
+                    </div>
+                    <div class="w-100 mb-4"></div>
+                    <div class="col-3 mx-5 p-0">
+                        <div class="contact p-4">
+                            <h5>Contact Us</h5>
+                            <div class="d-flex">                                                 
+                                <a href="#" class="mx-2"><img src="./asset/icon/mail.png" width="80%"></a> 
+                                <a href="#"><img src="./asset/icon/whatsapp.png" width="80%"></a>
+                            </div>      
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <h5>Service</h5>                    
+                        <a href="#">FAQ</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Terms & Condition</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-5 ml-5">               
+                <div class="row row-cols-1 justify-content-center align-items-center">
+                    <div class="col-10">
+                        <h5 class="ml-3 mb-4">Most Post</h5> 
+                    </div>
+                    <div class="col-9 d-flex mb-4 align-items-center p-0">
+                        <div class="img-post w-50">
+                            <img src="./asset/img/jetski.jpg">
+                        </div>
+                        <div class="hero ml-5 w-75">
+                            <h3>Lorem Ipsum Same Like That</h3>
+                            <p>2 August | 07.25</p>
+                        </div>
+                    </div>
+                    <div class="col-9 d-flex mb-4 align-items-center p-0">
+                        <div class="img-post w-50">
+                            <img src="./asset/img/jetski.jpg">
+                        </div>
+                        <div class="hero ml-5 w-75">
+                            <h3>Lorem Ipsum Same Like That</h3>
+                            <p>2 August | 07.25</p>
+                        </div>
+                    </div>
+                    <div class="col-9 d-flex mb-4 align-items-center p-0">
+                        <div class="img-post w-50">
+                            <img src="./asset/img/jetski.jpg">
+                        </div>
+                        <div class="hero ml-5 w-75">
+                            <h3>Lorem Ipsum Same Like That</h3>
+                            <p>2 August | 07.25</p>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="w-100"></div>
+            
+            <div class="col-11 p-4 license">
+                © 2019 Ikovid.ID, All right deserved
+            </div>
+        </section>
+
+        <!-- js -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>    
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
